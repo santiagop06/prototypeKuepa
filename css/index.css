@@ -1,0 +1,150 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+header{
+    margin-bottom: 2rem;
+    height: 50px;
+    width: 100%;
+    background-color: #091f44;
+    padding: 0 1rem;
+}
+h1{
+    color: #000;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    margin: 0;
+}
+
+.container-xl {
+    max-width: 1600px;
+}
+
+.person{
+    width: 150px;
+}
+
+.score{
+    margin-left: .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #21a6d9;
+    font-weight: 600;
+    margin-top: .5rem;
+}
+
+.description,.content{
+    border-radius: 10px;
+    border: 1px solid #d2d0d0;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.content{
+    padding: 1rem;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.description>figure{
+    position: relative;
+    bottom: 0;
+    margin: 0 1rem;
+}
+
+.actions{
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+}
+
+.send-button{
+    padding: .5rem;
+    background: #21a6d9;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    min-width: 200px;
+    height: 40px;
+    outline: none;
+}
+
+.game-container{
+    margin-top: 2rem;
+    padding: .5rem 0;
+}
+
+.send-button:focus{
+    outline: none;
+    border: none;
+}
+
+.send-button:hover{
+    background: #1484af;
+}
+
+.selected{
+    border: 1px solid #8dd2ec;
+}
+
+.error{
+    border: 1px solid #f34a45;
+}
+
+.out{
+    border: 1px solid #f7c62f;
+}
+
+.done{
+    border: 1px solid #24CF6C;
+}
+
+.hide{
+    display: none !important;
+}
+.game_size{
+    display: flex;
+    justify-content: center;
+}
+input{
+    display: none;
+  }
+img{
+    padding: 5px;
+}
+label{
+    border-style: solid;
+    border-color: #fff;
+    border-radius: .75em;
+}
+  
+:checked+label {
+    border-style: solid;
+    border-color: #2aabdb;
+    border-radius: .75em;
+  }
+.small{
+    height: 200px;
+}
+.big{
+    height: 250px;
+}
+
+@media only screen and (max-width: 800px){
+    h1{
+        font-size: 2rem;
+    }
+}
+/* 
+.animate__animated.animate__heartBeat {
+    --animate__repeat:4;
+  } */

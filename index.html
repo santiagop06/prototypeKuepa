@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+  <!-- Disabled Cache -->
+
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css?v=202011271624" rossorigin="anonymous">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./css/index.css?v=202011271624" rossorigin="anonymous">
+  <!-- Macro CSS -->
+  <link rel="stylesheet" href="./css/macro.css?v=202011271624" rossorigin="anonymous">
+  <!-- Game CSS -->
+  <link rel="stylesheet" href="./css/game.css?v=202011271624" rossorigin="anonymous">
+  <!-- Animations CSS Animate CSS Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Fonts Monserat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <title>IQ</title>
+</head>
+
+<body>
+
+  <header class="d-flex align-items-center justify-content-between">
+    <figure class="m-0">
+      <img src="./assets/images/logo.png">
+    </figure>
+    <figure class="m-0">
+      <img src="./assets/images/profile.png">
+    </figure>
+  </header>
+
+  <div class="container-xl">
+
+    <section class="row mt-5">
+
+      <section class="col-lg-9 col-sm-12 col-12">
+
+        <div class="d-flex justify-content-between flex-wrap align-items-start mt-5 mb-2">
+          <div>
+            <h1 id='title-h1'></h1>
+
+            <!-- <button id="read-instructions-button" class="btn btn-primary">
+              Leer instrucciones
+            </button> -->
+          </div>
+    
+          <div class="d-flex align-items-center">
+            <div id="star-icon" class="star d-flex align-items-center mr-4">
+              <figure id="star-icon-image" class="d-none m-0 p-0" >
+                  <img src="./assets/images/star.svg">
+              </figure>
+              <p id="star-count"></p>
+            </div>
+            <div id="medal-icon" class="medal d-flex align-items-center mr-4">
+              <figure id="medal-icon-image" class="d-none m-0 p-0">
+                <img src="./assets/images/medal-0.svg" width="40px">
+              </figure>
+              <p id="medal-count"></p>
+            </div>
+            <div class="brains d-flex align-items-center">
+              <figure id="brain-icon-image" class="m-0 p-0"> <img src="./assets/images/brain.png"></figure>
+              <span id="brains" class="score animate__animated">+0</span>
+            </div>
+          </div>
+    
+        </div>
+
+        <article id="content" class="content position-relative">
+
+          <article class="d-flex align-items-center">
+            <p id="instructions-container">
+            </p>
+          </article>
+
+          <div class="game-container" id="game-container">
+            <form id="game-containers">
+              
+            </form>
+  
+            
+            <!-- <div class="sum-container col-sm-3 col-7">
+              <p id="number-show-one">000</p>
+              <p><span class="sum-symbol">+</span><span id="number-show-two">000</span></p>
+              <hr>
+              </hr>
+              <div class="inputs-game d-flex justify-content-end">
+                <input autocomplete="nope" id="number-one" maxlength="1"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text" />
+                <input autocomplete="nope" id="number-two" maxlength="1"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text" />
+                <input autocomplete="nope" id="number-three" maxlength="1"
+                  oninput="this.value=this.value.replace(/[^0-9]/g,'');" type="text" />
+              </div>
+            </div> -->
+
+
+          </div>
+
+
+          <div class="actions d-flex justify-content-center">
+            <button id="send" class="send-button" type="button">Enviar</button>
+          </div>
+
+          <div id="messages"></div>
+
+          <!-- <div id="start-game-container" class="animate__animated start-game-container d-flex align-items-center justify-content-center">
+                <button id="start-game" class="send-button" type="button">Iniciar Juego</button>
+              </div> -->
+
+        </article>
+      </section>
+
+      <section class="col-lg-3 col-sm-6 col-12 mx-auto">
+
+        <!-- <div class="card">
+            <div class="header-card yellow">Oportunidades</div>
+            <div class="content-card rating">
+  
+              <svg id="live-1" class="live animate__animated" width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.2327 29.5574L20 29.4351L19.7673 29.5574L8.90836 35.2663L10.9822 23.1747L11.0267 22.9156L10.8384 22.7321L2.05335 14.1688L14.194 12.4046L14.4542 12.3668L14.5705 12.1311L20 1.12978L25.4295 12.1311L25.5458 12.3668L25.806 12.4046L37.9466 14.1688L29.1616 22.7321L28.9733 22.9156L29.0178 23.1747L31.0916 35.2663L20.2327 29.5574Z" stroke="#F7C504"/>
+              </svg>
+  
+              <svg id="live-2" class="live animate__animated" width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.2327 29.5574L20 29.4351L19.7673 29.5574L8.90836 35.2663L10.9822 23.1747L11.0267 22.9156L10.8384 22.7321L2.05335 14.1688L14.194 12.4046L14.4542 12.3668L14.5705 12.1311L20 1.12978L25.4295 12.1311L25.5458 12.3668L25.806 12.4046L37.9466 14.1688L29.1616 22.7321L28.9733 22.9156L29.0178 23.1747L31.0916 35.2663L20.2327 29.5574Z" stroke="#F7C504"/>
+              </svg>
+  
+              <svg id="live-3" class="live animate__animated" width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.2327 29.5574L20 29.4351L19.7673 29.5574L8.90836 35.2663L10.9822 23.1747L11.0267 22.9156L10.8384 22.7321L2.05335 14.1688L14.194 12.4046L14.4542 12.3668L14.5705 12.1311L20 1.12978L25.4295 12.1311L25.5458 12.3668L25.806 12.4046L37.9466 14.1688L29.1616 22.7321L28.9733 22.9156L29.0178 23.1747L31.0916 35.2663L20.2327 29.5574Z" stroke="#F7C504"/>
+              </svg>
+              
+            </div>
+        </div> -->
+
+        <figure class="text-center mb-2 p-0">
+          <img id="person" class="person animate__animated"
+          src="./assets/images/characters/0.png">
+        </figure>
+
+        <div class="card">
+          <div class="header-card blue">Destreza</div>
+          <div class="content-card" id="resume-score">
+            0
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="header-card green little-text">Preguntas contestadas</div>
+          <div id="correct-reponses" class="content-card">
+            0
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="header-card purple little-text">Tiempo</div>
+          <div data-chronometer class="content-card">
+            00:00:00
+          </div>
+        </div>
+
+      </section>
+
+    </section>
+  </div>
+
+  </section>
+
+  <section>
+    <!--       <audio autoplay loop id="playAudio">
+      <source src="./assets/sounds/happy.ogg">
+    </audio> -->
+
+    <audio autoplay id="fine-0">
+      <source src="./assets/sounds/fine-0.mp3">
+    </audio>
+
+    <audio autoplay id="fine-1">
+      <source src="./assets/sounds/fine-1.mp3">
+    </audio>
+
+    <audio autoplay id="fine-2">
+      <source src="./assets/sounds/fine-3.mp3">
+    </audio>
+
+    <audio autoplay id="fine-3">
+      <source src="./assets/sounds/fine-3.mp3">
+    </audio>
+
+    <audio autoplay id="fine-4">
+      <source src="./assets/sounds/fine-0.mp3">
+    </audio>
+
+    <audio autoplay id="fine-5">
+      <source src="./assets/sounds/fine-1.mp3">
+    </audio>
+
+    <audio autoplay id="fail-0">
+      <source src="./assets/sounds/fail-0.mp3">
+    </audio>
+
+    <audio autoplay id="add-brain-sound">
+      <source src="./assets/sounds/add-brain-0.mp3">
+    </audio>
+
+    <audio autoplay id="add-star-sound">
+      <source src="./assets/sounds/add-star-0.mp3">
+    </audio>
+
+    <audio autoplay id="add-medal-sound">
+      <source src="./assets/sounds/add-medal-0.mp3">
+    </audio>
+
+    <!--  <audio autoplay id="fail-1">
+      <source src="./assets/sounds/fail-1.mp3">
+    </audio>
+    <audio autoplay id="fail-2">
+      <source src="./assets/sounds/fail-2.mp3">
+    </audio> -->
+
+  </section>
+
+  <!-- Important JavaScript -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./bootstrap/js/jquery.min.js?v=202011271624"></script>
+  <script src="./bootstrap/js/bootstrap.bundle.js?v=202011271624"></script>
+  <script src="./js/tts.js?v=2020112501"></script>
+  <script src="./js/index.js?v=202011271624"></script>
+  <script src="./js/buildScoreList.js?v=202011271624"></script>
+  <script src="./js/data.js?v=202011271624"></script>
+  <script src="./js/game2.js?v=202011271624"></script>
+  <script src="./js/time.js?v=202011271624"></script>
+</body>
+
+</html>

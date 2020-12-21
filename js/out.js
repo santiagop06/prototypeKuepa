@@ -1,0 +1,3 @@
+$( "#goLections" ).click(()=>{
+    location.reload();
+});
