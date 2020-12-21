@@ -175,6 +175,7 @@ const showInstructions = (num) => {
     const instructionsContainer = $('#instructions-container')
 
     if(num===0){
+        INSTRUCTIONS= "¿Cuál es el más grande?"
         instructionsContainer.html(`${INSTRUCTIONS} <a href='#' id="read-instructions-button"><img src='./assets/images/audio.png' style="width: 30px" /></a>`)
     }else{
         INSTRUCTIONS= "¿Cuál es el más pequeño?"
