@@ -20,7 +20,7 @@ var messagesError = [
 ];
 
 var messagesCorrect = [
-    '¡BUEN TRABAJO!',
+    'ASI SE HACE!',
     '¡SÚPER!',
 ];
 
