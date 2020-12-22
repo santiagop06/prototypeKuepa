@@ -1,5 +1,5 @@
-let index= Math.floor((Math.random() * (2)) + 0)
-$("#message-done-title" ).text(messagesCorrect[index]);
+let sound= Math.floor((Math.random() * (2)) + 0)
+$("#message-done-title" ).text(messagesCorrect[sound]);
 //@INFO Se actualiza el score y resta una pregunta si llego a 100 se acaba el juego sino muestra una imagen
 setTimeout(() => {
     addScore();
@@ -22,6 +22,6 @@ setTimeout(() => {
    // }
   }, 2500);
 
-$(`#fine-${index}`)[0].play();
+$(`#fine-${sound}`)[0].play();
 
 

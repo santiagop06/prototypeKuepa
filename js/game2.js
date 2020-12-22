@@ -20,8 +20,8 @@ var messagesError = [
 ];
 
 var messagesCorrect = [
-    'ASI SE HACE!',
-    '¡SÚPER!',
+    '¡ASI SE HACE!',
+    '¡EXCELENTE!',
 ];
 
 const tts = TTS()
