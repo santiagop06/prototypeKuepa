@@ -1,4 +1,4 @@
-const index= Math.floor((Math.random() * (2)) + 0)
+let index= Math.floor((Math.random() * (2)) + 0)
 $("#message-done-title" ).text(messagesCorrect[index]);
 //@INFO Se actualiza el score y resta una pregunta si llego a 100 se acaba el juego sino muestra una imagen
 setTimeout(() => {
