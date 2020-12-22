@@ -1,4 +1,4 @@
-let sound= Math.floor((Math.random() * (2)) + 0)
+var sound= Math.floor((Math.random() * (2)) + 0)
 $("#message-done-title" ).text(messagesCorrect[sound]);
 //@INFO Se actualiza el score y resta una pregunta si llego a 100 se acaba el juego sino muestra una imagen
 setTimeout(() => {
